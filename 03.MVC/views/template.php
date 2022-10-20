@@ -56,9 +56,14 @@
         include "modules/navegacion.php"
     ?>
 
-<section>
-    <h1>PÁGINA DE INICIO</h1>
-</section>
+    <section>
+        <?php
+
+        $mvc = new MvcController;
+        $mvc -> enlacesPaginasController();
+
+        ?>
+    </section>
 
 </body>
 </html>
